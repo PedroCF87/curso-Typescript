@@ -1,4 +1,5 @@
-# curso-Typescript
+# Curso de Typescript da Alura
+
 Repositório do projeto desenvolvido no curso de Typescript da Alura.
 
 ## Link's do curso
