@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc",
-    "start": "tsc -w"
+    "watch": "tsc -w",
+    "server": "lite-server --baseDir=app",
+    "test": "concurrently \"npm run watch\" \"npm run server\"",
+    "start": "concurrently \"npm run compile\" \"npm run server\""
   },
   "author": "Pedro Figueira",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^2.0.42",
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0",
     "typescript": "^2.3.2"
   }
 }

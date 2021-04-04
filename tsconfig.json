@@ -1,9 +1,13 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "outDir": "app/js",
-        "noEmitOnError": true,
-        "noImplicitAny": true
+        "target": "es6",                // Versão do Ecma Script usado pelo compilador
+        "outDir": "app/js",             // Pasta onde serão salvos os arquivos compilados
+        "noEmitOnError": true,          // Não compilar códigos com erros
+        "noImplicitAny": true,          // Não atribuir o Tipo Any às variáveis declaradas sem tipagem
+        "removeComments": true,         // Evitar que os comentários feitos no TS sejam passados pro JS compilado
+        "module": "system",             // Usando o carregador automático
+        "strictNullChecks": true,       // Impedir que uma variável Boleana receba NULL ou UNDEFINED
+        "experimentalDecorators": true  // Ativar o uso dos Decorators
     },
     "include": [
         "app/ts/**/*"
